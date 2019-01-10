@@ -1,1 +1,1 @@
-# ros_bazel
+Repository for ROS dependencies
