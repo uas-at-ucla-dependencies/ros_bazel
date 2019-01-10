@@ -1,0 +1,8 @@
+prefix=/src/bundle_ws/install
+
+Name: xmlrpcpp
+Description: Description of xmlrpcpp
+Version: 1.11.21
+Cflags: -I/src/bundle_ws/install/include
+Libs: -L/src/bundle_ws/install/lib -lxmlrpcpp
+Requires: cpp_common

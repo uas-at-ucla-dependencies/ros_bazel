@@ -1,0 +1,8 @@
+prefix=/src/bundle_ws/install
+
+Name: genpy
+Description: Description of genpy
+Version: 0.5.10
+Cflags: 
+Libs: -L/src/bundle_ws/install/lib 
+Requires: genmsg

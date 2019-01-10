@@ -1,0 +1,8 @@
+prefix=/src/bundle_ws/install
+
+Name: message_generation
+Description: Description of message_generation
+Version: 0.2.10
+Cflags: 
+Libs: -L/src/bundle_ws/install/lib 
+Requires: gencpp genlisp genmsg genpy
