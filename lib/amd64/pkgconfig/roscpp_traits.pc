@@ -1,8 +1,0 @@
-prefix=/src/bundle_ws/install
-
-Name: roscpp_traits
-Description: Description of roscpp_traits
-Version: 0.5.8
-Cflags: -I/src/bundle_ws/install/include
-Libs: -L/src/bundle_ws/install/lib 
-Requires: cpp_common rostime

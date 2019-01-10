@@ -1,8 +1,0 @@
-prefix=/src/bundle_ws/install
-
-Name: roscpp_serialization
-Description: Description of roscpp_serialization
-Version: 0.5.8
-Cflags: -I/src/bundle_ws/install/include
-Libs: -L/src/bundle_ws/install/lib -lroscpp_serialization
-Requires: cpp_common roscpp_traits rostime

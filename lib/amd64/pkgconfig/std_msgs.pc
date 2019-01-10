@@ -1,8 +1,0 @@
-prefix=/src/bundle_ws/install
-
-Name: std_msgs
-Description: Description of std_msgs
-Version: 0.5.10
-Cflags: -I/src/bundle_ws/install/include
-Libs: -L/src/bundle_ws/install/lib 
-Requires: message_runtime

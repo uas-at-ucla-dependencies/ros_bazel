@@ -1,8 +1,0 @@
-prefix=/src/bundle_ws/install
-
-Name: roslib
-Description: Description of roslib
-Version: 1.11.14
-Cflags: -I/src/bundle_ws/install/include
-Libs: -L/src/bundle_ws/install/lib -lroslib
-Requires: rospack

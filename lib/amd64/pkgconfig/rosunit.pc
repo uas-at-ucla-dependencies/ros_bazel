@@ -1,8 +1,0 @@
-prefix=/src/bundle_ws/install
-
-Name: rosunit
-Description: Description of rosunit
-Version: 1.11.14
-Cflags: 
-Libs: -L/src/bundle_ws/install/lib 
-Requires: 
