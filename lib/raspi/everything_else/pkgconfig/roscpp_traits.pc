@@ -1,8 +1,0 @@
-prefix=/usr
-
-Name: roscpp_traits
-Description: Description of roscpp_traits
-Version: 0.6.1
-Cflags: 
-Libs:  
-Requires: cpp_common rostime
