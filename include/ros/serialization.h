@@ -36,6 +36,7 @@
 #include "serialized_message.h"
 #include "ros/message_traits.h"
 #include "ros/builtin_message_traits.h"
+#include "ros/protobuffer_traits.h"
 #include "ros/exception.h"
 #include "ros/datatypes.h"
 
@@ -115,7 +116,7 @@ ROSCPP_SERIALIZATION_DECL void throwStreamOverrun();
  * Specializing the Serializer class is the only thing you need to do to get the ROS serialization system
  * to work with a type.
  */
-template<typename T>
+template<typename T, typename Enable = void>
 struct Serializer
 {
   /**
