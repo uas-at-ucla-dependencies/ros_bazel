@@ -55,11 +55,11 @@ static std::map<std::string, std::string> type_md5_map;
 template<typename T>
 struct DataType<T, typename boost::enable_if<boost::is_base_of< ::google::protobuf::Message, T> >::type>
 {
-  static const char* value() 
-  { 
+  static const char* value()
+  {
     static std::string data_type = "";
     data_type = "pb_msgs/" + T::descriptor()->name();
-    return data_type.c_str(); 
+    return data_type.c_str();
   }
   static const char* value(const T&) { return value(); }
 };
@@ -67,10 +67,10 @@ struct DataType<T, typename boost::enable_if<boost::is_base_of< ::google::protob
 template<typename T>
 struct MD5Sum<T, typename boost::enable_if<boost::is_base_of< ::google::protobuf::Message, T> >::type>
 {
-  static const char* value() 
+  static const char* value()
   {
     std::string data_type(DataType<T>::value());
-    if (type_md5_map.count(data_type) == 0) 
+    if (type_md5_map.count(data_type) == 0)
     {
       type_md5_map[data_type] = ros::md5::MD5(data_type).toStr();
     }
