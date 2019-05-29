@@ -39,6 +39,7 @@ struct Clock_
 
 
 
+
   typedef boost::shared_ptr< ::rosgraph_msgs::Clock_<ContainerAllocator> > Ptr;
   typedef boost::shared_ptr< ::rosgraph_msgs::Clock_<ContainerAllocator> const> ConstPtr;
 
@@ -70,7 +71,7 @@ namespace message_traits
 
 
 // BOOLTRAITS {'IsFixedSize': True, 'IsMessage': True, 'HasHeader': False}
-// {'rosgraph_msgs': ['/src/bundle_ws/src/rosgraph_msgs/msg'], 'std_msgs': ['/src/bundle_ws/install/share/std_msgs/cmake/../msg']}
+// {'rosgraph_msgs': ['/home/comran/Code/ros_lunar_amd64/src/ros_comm_msgs/rosgraph_msgs/msg'], 'std_msgs': ['/home/comran/Code/ros_lunar_amd64/install_isolated/share/std_msgs/cmake/../msg']}
 
 // !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
 

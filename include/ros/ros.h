@@ -42,7 +42,6 @@
 
 #include "ros/serialization_protobuffer.h"
 #include "ros/protobuffer_traits.h"
-
 #include "ros/common.h"
 #include "ros/types.h"
 #include "ros/node_handle.h"

@@ -73,12 +73,15 @@ struct Log_
   _topics_type topics;
 
 
-    enum { DEBUG = 1 };
-     enum { INFO = 2 };
-     enum { WARN = 4 };
-     enum { ERROR = 8 };
-     enum { FATAL = 16 };
- 
+
+  enum {
+    DEBUG = 1,
+    INFO = 2,
+    WARN = 4,
+    ERROR = 8,
+    FATAL = 16,
+  };
+
 
   typedef boost::shared_ptr< ::rosgraph_msgs::Log_<ContainerAllocator> > Ptr;
   typedef boost::shared_ptr< ::rosgraph_msgs::Log_<ContainerAllocator> const> ConstPtr;
@@ -121,7 +124,7 @@ namespace message_traits
 
 
 // BOOLTRAITS {'IsFixedSize': False, 'IsMessage': True, 'HasHeader': True}
-// {'rosgraph_msgs': ['/src/bundle_ws/src/rosgraph_msgs/msg'], 'std_msgs': ['/src/bundle_ws/install/share/std_msgs/cmake/../msg']}
+// {'rosgraph_msgs': ['/home/comran/Code/ros_lunar_amd64/src/ros_comm_msgs/rosgraph_msgs/msg'], 'std_msgs': ['/home/comran/Code/ros_lunar_amd64/install_isolated/share/std_msgs/cmake/../msg']}
 
 // !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
 

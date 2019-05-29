@@ -29,6 +29,7 @@
 #define ROSLIB_MESSAGE_TRAITS_H
 
 #include "message_forward.h"
+
 #include <ros/time.h>
 
 #include <string>
@@ -38,7 +39,7 @@
 
 namespace std_msgs
 {
-  ROS_DECLARE_MESSAGE(Header);
+  ROS_DECLARE_MESSAGE(Header)
 }
 
 #define ROS_IMPLEMENT_SIMPLE_TOPIC_TRAITS(msg, md5sum, datatype, definition) \
@@ -63,6 +64,7 @@ namespace std_msgs
   }; \
   } \
   }
+
 
 namespace ros
 {

@@ -76,8 +76,8 @@ namespace ros
   template<class T, class D>
   D TimeBase<T, D>::operator-(const T &rhs) const
   {
-    return D((int32_t)sec -  (int32_t)rhs.sec,
-             (int32_t)nsec - (int32_t)rhs.nsec); // carry handled in ctor
+    D d;
+    return d.fromNSec(toNSec() - rhs.toNSec());
   }
 
   template<class T, class D>
@@ -167,7 +167,7 @@ namespace ros
 #if defined(BOOST_DATE_TIME_HAS_NANOSECONDS)
     return pt::from_time_t(sec) + pt::nanoseconds(nsec);
 #else
-    return pt::from_time_t(sec) + pt::microseconds(nsec/1000.0);
+    return pt::from_time_t(sec) + pt::microseconds(nsec/1000);
 #endif
   }
 
